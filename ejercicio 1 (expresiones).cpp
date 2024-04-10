@@ -1,6 +1,6 @@
 #include <iostream>
 int main() {
-	int a, b;
+	float a, b; //Puede ser de manera integral también.
 
 	std::cout << "Ingrese el número para A: ";
 	 std::cin >> a;
@@ -8,9 +8,9 @@ int main() {
 	std::cout << "Ingrese el número para B: ";
 	 std::cin >> b;
 
-	int suma = 0;
+	float suma = 0;
 	 suma = (a / b) + 1;
-
+         std::cout.precision(2) // En caso de tener demasiados decimales.
 	 std::cout << "\nEl resultado de la operación es: " << suma << std::endl;
 
 	return 0;
